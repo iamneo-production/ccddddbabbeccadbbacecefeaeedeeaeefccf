@@ -1,6 +1,12 @@
 package com.example.sprigapp.Controllers;
 
+@RestController
+@RequestMapping("/req")
 public class Message
 {
-    public 
+    @GetMapping("/welcome")
+    public String Welcome()
+    {
+        return "Welcome String Boot!";
+    }
 }
